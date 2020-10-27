@@ -1,2 +1,3 @@
 foobar
-New Line For Commit
+New Line For Commit 6
+New Line For Commit 7
