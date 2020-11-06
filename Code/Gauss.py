@@ -15,7 +15,7 @@ class Distribution():
         Sigma_inv = np.linalg.inv(Sigma)
         N = np.sqrt((2*np.pi)**n*Sigma_det)
 
-        fac = np.einsum('...k,kl,...l->...',x-mu,Sigma_inv,x-mu)
+        fac = np.einsum('...k,kl,...l->...',x-mu,Sigma_inv,x-mu) # コードにコメントします
 
         return np.exp(-fac/2)/N
 
